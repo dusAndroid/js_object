@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* 约定：所有的边框都是由border-bottom生成*/
+/*初始化*/
+html,body{width:100%;}
+body{overflow-x:hidden;}
+*{ margin:0; padding:0; outline:none; border:none;}
+img{ display:block;}
+ul,ol{ list-style:none;}
+body{ font-size:12px; color:#6F6F6F;}
+a{ text-decoration:none;color:#6F6F6F;}
+a:hover{ text-decoration:none; color:#F0378D;}
+
+/*头部*/
+.header{
+    width: 100%;
+    height: 30px;
+    background-color: #87dbff;
+}
+
+.header > .header-in{
+    width: 1200px;
+    height: 30px;
+    background: pink;
+    margin: 0 auto;
+    line-height: 30px;
+}
