@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <header class="header"></header>
+    <main class="desc"></main>
+    <p class="price"></p>
+</div>
+<script>
+    // 产品对象 ：名称 价格 数量 描述
+    function Product(){
+        /**标题*/
+        this.title = 'iphone7';
+        /**价格*/
+        this.price = 6700;
+        /**图片*/
+        this.images =[];
+        /**描述*/
+        this.desc = '漂亮的手机漂亮的手机漂亮的手机漂亮的手机漂亮的手机';
+    }
+
+    Product.prototype = {
+        /**购买*/
+        buy:function(){
+            alert("buy");
+        },
+        /**获取描述*/
+        getDetail:function(){
+
+        },
+        /**绑定节点*/
+        bindDOM:function(){
+
+        },
+        /**绑定事件*/
+        bindEvent:function(){
+
+        }
+    }
+    window.onload = function () {
+        var product = new Product();
+        product.title = "我的手机"
+        /**先获取元素*/
+        var header = document.getElementsByTagName("header")[0];
+        var desc = document.getElementsByTagName("main")[0];
+        var price = document.getElementsByTagName("p")[0];
+        /**绑定元素*/
+
+        header.innerHTML = product.title;
+        desc.innerHTML = product.desc;
+        price.innerHTML = product.price;
+
+        /**绑定事件*/
+    }
+</script>
+</body>
+</html>
